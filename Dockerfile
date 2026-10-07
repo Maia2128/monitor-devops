@@ -8,6 +8,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app.py .
 
+RUN useradd --create-home appuser
+
+USER appuser
+
 EXPOSE 5000
 
 HEALTHCHECK --interval=10s --timeout=3s --retries=3 \
