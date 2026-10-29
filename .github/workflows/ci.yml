@@ -1,0 +1,10 @@
+name: CI Monitor DevOps 
+
+on: push 
+
+jobs:
+  verificar: 
+     runs- on: ubuntu-latest
+     steps: 
+        - name: Verificar Ambiente 
+          run: echo "Ambiente funcionando!" 
