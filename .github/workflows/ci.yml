@@ -10,6 +10,9 @@ jobs:
       - name: Baixar codigo do repositorio
         uses: actions/checkout@v4
 
+      - name: Listar arquivos do projeto
+        run: ls
+
     
       - name: Verificar Ambiente
         run: echo "Ambiente funcionando!"
