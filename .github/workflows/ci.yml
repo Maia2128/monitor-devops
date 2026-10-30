@@ -8,7 +8,12 @@ jobs:
 
     steps:
       - name: Baixar codigo do repositorio
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4   
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
       - name: Listar arquivos do projeto
         run: ls
