@@ -27,3 +27,6 @@ jobs:
     
       - name: Verificar Ambiente
         run: echo "Ambiente funcionando!"
+
+      - name: Construir imagem Docker
+        run: docker build -t monitor-devops .
